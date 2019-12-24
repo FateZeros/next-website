@@ -1,5 +1,3 @@
-import styles from './home.less'
+import home from './home'
 
-const Home = () => <div className={styles.example}>首页</div>
-
-export default Home
+export default home
