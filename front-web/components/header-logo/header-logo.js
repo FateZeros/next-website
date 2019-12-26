@@ -12,6 +12,10 @@ class HeaderLogo extends Component {
             className={styles.logoImg}
           />
         </div>
+        <div className={styles.headerHui}>
+          <img src="/static/images/hui-32.png" alt="" />
+          <span>快速注册9折优惠</span>
+        </div>
       </div>
     )
   }

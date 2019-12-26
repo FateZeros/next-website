@@ -1,22 +1,28 @@
 import React from 'react'
 import Link from 'next/link'
 
-import './nav.less'
+import styles from './nav.less'
 
 const links = [
-  { href: 'https://zeit.co/now', label: 'ZEIT' },
-  { href: 'https://github.com/zeit/next.js', label: 'GitHub' }
+  { href: 'https://github.com/zeit/next.js', label: '香港公司' },
+  { href: 'https://github.com/zeit/next.js', label: '深圳公司' },
+  { href: 'https://github.com/zeit/next.js', label: '海外公司' },
+  { href: 'https://github.com/zeit/next.js', label: '做账报税' },
+  { href: 'https://github.com/zeit/next.js', label: '律师公证' },
+  { href: 'https://github.com/zeit/next.js', label: '商标注册' },
+  { href: 'https://github.com/zeit/next.js', label: '银行开户' },
+  { href: 'https://github.com/zeit/next.js', label: '关于欧记' }
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`
   return link
 })
 
 const Nav = () => (
-  <nav>
-    <ul>
+  <nav className={styles.navCont}>
+    <ul className={styles.linkCont}>
       <li>
         <Link href="/">
-          <a>Home</a>
+          <a>网站首页</a>
         </Link>
       </li>
       {links.map(({ key, href, label }) => (

@@ -5,6 +5,17 @@ import styles from './banner.less'
 
 // https://github.com/voronianski/react-swipe
 
+const banners = [
+  'banner1.png',
+  'banner2.png',
+  'banner3.png',
+  'banner4.png',
+  'banner5.png'
+].map(banner => {
+  banner = `/static/images/${banner}`
+  return banner
+})
+
 const Banner = () => {
   return (
     <div className={styles.banner}>
@@ -12,9 +23,11 @@ const Banner = () => {
         className="swipe-card"
         swipeOptions={{ continuous: true, auto: 5000, speed: 400 }}
       >
-        <div className={styles.slide}>PANE 1</div>
-        <div className={styles.slide}>PANE 2</div>
-        <div className={styles.slide}>PANE 3</div>
+        {banners.map(item => (
+          <div className={styles.slide}>
+            <img src={item} alt="" />
+          </div>
+        ))}
       </ReactSwipe>
     </div>
   )
