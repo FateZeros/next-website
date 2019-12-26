@@ -24,7 +24,7 @@ const Banner = () => {
         swipeOptions={{ continuous: true, auto: 5000, speed: 400 }}
       >
         {banners.map(item => (
-          <div className={styles.slide}>
+          <div className={styles.slide} key={item}>
             <img src={item} alt="" />
           </div>
         ))}
