@@ -13,11 +13,16 @@ import './index.less'
 const Website = () => (
   <div style={{ height: '100%', position: 'relative' }}>
     <Head>
-      <title>首页</title>
-      <link rel="icon" href="/favicon.ico" />
+      <meta httpEquiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+      />
       <meta name="renderer" content="webkit" />
       <meta httpEquiv="description" content="欧记商务" />
       <meta name="author" content="欧记商务，ouji" />
+      <title>首页</title>
+      <link rel="icon" href="/favicon.ico" />
     </Head>
 
     <HeaderWrap />

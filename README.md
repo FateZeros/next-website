@@ -8,9 +8,23 @@
 
 [examples](https://github.com/zeit/next.js/tree/master/examples)
 
+### 安装 next 和 less
+
 ```bash
 npx create-next-app
 
 # 使用 less
 npm install --save @zeit/next-less less
+
+npm install --save null-loader
 ```
+
+### 使用 antd
+
+```bash
+npm install antd --save
+
+npm install babel-plugin-import --save-dev
+```
+
+CSS Module 和 antd 同时使用会出现一些样式问题。
