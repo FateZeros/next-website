@@ -15,6 +15,9 @@ const Website = () => (
     <Head>
       <title>首页</title>
       <link rel="icon" href="/favicon.ico" />
+      <meta name="renderer" content="webkit" />
+      <meta httpEquiv="description" content="欧记商务" />
+      <meta name="author" content="欧记商务，ouji" />
     </Head>
 
     <HeaderWrap />
