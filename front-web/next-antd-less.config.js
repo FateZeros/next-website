@@ -1,5 +1,7 @@
 var cssLoaderConfig = require('@zeit/next-css/css-loader-config')
 
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+
 module.exports = (nextConfig = {}) => {
   return Object.assign({}, nextConfig, {
     webpack: (config, options) => {
@@ -56,6 +58,9 @@ module.exports = (nextConfig = {}) => {
           ]
         })
       })
+
+      // 清空.next文件夹，防止越来越大
+      config.plugins.push(new CleanWebpackPlugin())
 
       if (isServer) {
         const antStyles = /antd\/.*?\/style.*?/
