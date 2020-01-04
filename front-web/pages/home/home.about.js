@@ -61,46 +61,58 @@ class HomeAbout extends Component {
               <Row className={styles.aboutRow}>
                 <span>
                   <Icon type="phone" className={styles.aboutRowLeftIcon} />
-                  全国咨询电话: 0755-83583580
+                  全国咨询电话：0755-83583580
                 </span>
               </Row>
               <Row className={styles.aboutRow}>
                 <span>
                   <Icon type="user" className={styles.aboutRowLeftIcon} />
-                  江先生：18923837259
+                  江先生：189 2995 5889
                 </span>
               </Row>
               <Row className={styles.aboutRow}>
                 <span>
                   <Icon type="user" className={styles.aboutRowLeftIcon} />
-                  林小姐：18923837259
+                  林小姐：189 2383 7259
                 </span>
               </Row>
             </TabPane>
             <TabPane tab="公司地址" key="2">
-              <Row style={{ marginBottom: 4 }}>香港分部</Row>
-              <Row style={{ marginBottom: 4 }}>香港总机</Row>
+              <Row style={{ marginBottom: 4 }}>
+                香港分部：九龙新葡港五芳街道工业大厦
+              </Row>
+              <Row style={{ marginBottom: 4 }}>香港总机：00852-30696980</Row>
               <Row style={{ marginBottom: 4 }}>
                 <span>
-                  深圳总部{' '}
+                  深圳总部：深圳市罗湖区深南东路2017号华乐大厦709室
                   <Icon
                     type="environment"
                     className={styles.aboutRowRightIcon}
                   />
                 </span>
               </Row>
-              <Row style={{ marginBottom: 4 }}>深圳总机</Row>
-              <Row style={{ marginBottom: 4 }}>直线：</Row>
-              <Row style={{ marginBottom: 4 }}>传真：</Row>
+              <Row style={{ marginBottom: 4 }}>深圳总机：0755-83582580</Row>
+              <Row style={{ marginBottom: 4 }}>直线：181 2995 5889</Row>
+              <Row style={{ marginBottom: 4 }}>传真：0755-82239561(FAX)</Row>
             </TabPane>
             <TabPane tab="付款方式" key="3">
-              <Row style={{ marginBottom: 4 }}>银行户名：</Row>
-              <Row style={{ marginBottom: 4 }}>开户银行：</Row>
-              <Row style={{ marginBottom: 4 }}>银行账户：</Row>
-              <Row style={{ marginBottom: 4 }}>备注</Row>
-              <Row style={{ marginBottom: 4 }}>外币账户：</Row>
-              <Row style={{ marginBottom: 4 }}>外币账户：</Row>
-              <Row style={{ marginBottom: 4 }}>NO：</Row>
+              <Row style={{ marginBottom: 4 }}>
+                银行户名：深圳欧记商务有限公司
+              </Row>
+              <Row style={{ marginBottom: 4 }}>
+                开户银行：中国工商银行深圳福虹支行
+              </Row>
+              <Row style={{ marginBottom: 4 }}>
+                银行账户：4000027509200354180
+              </Row>
+              <Row style={{ marginBottom: 4 }}>
+                备注： 款项入公司对公账号需缴纳0.06的税款
+              </Row>
+              <Row style={{ marginBottom: 4 }}>外币账户：香港上海汇丰银行</Row>
+              <Row style={{ marginBottom: 4 }}>
+                CH'S NAME：CHINA KIMFONE BUSINESS LIMITED
+              </Row>
+              <Row style={{ marginBottom: 4 }}>NO：848-843900-838</Row>
             </TabPane>
           </Tabs>
         </div>
