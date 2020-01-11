@@ -12,26 +12,26 @@ const feeDetails = [
   {
     id: 2,
     feeImg: 'fee-serve2.png',
-    feeDetail: '提供身份证复印件，6个工作日办完',
+    feeDetail: '提供CR,BR章程，1个工作日办完',
     fee: '980元全包'
   },
   {
     id: 3,
     feeImg: 'fee-serve3.png',
-    feeDetail: '提供身份证复印件，6个工作日办完',
+    feeDetail: '提供商标图样，1个月出证',
     fee: '2600元/个'
   },
   {
     id: 4,
     feeImg: 'fee-serve4.png',
-    feeDetail: '提供身份证复印件，6个工作日办完',
+    feeDetail: '提供商标图样，1个月出证',
     fee: '1500元/个'
   },
   {
     id: 5,
     feeImg: 'fee-serve5.png',
-    feeDetail: '提供身份证复印件，6个工作日办完',
-    fee: '4880元全包'
+    feeDetail: '提供银行流水，5-10日办完',
+    fee: '600元起'
   }
 ].map(img => {
   img.feeImg = `/static/contact/${img.feeImg}`
@@ -44,7 +44,7 @@ class HomeFee extends Component {
       <div className={styles.homeFee}>
         <div className={styles.feeContainer}>
           <div className={styles.feeTitle}>
-            <strong>一站式注册服务</strong>
+            <strong>一站式服务</strong>
           </div>
           <div className={styles.feeTips}>
             <img src="/static/images/feeImg1-32.png" alt="" />
