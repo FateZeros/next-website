@@ -28,3 +28,10 @@ npm install babel-plugin-import --save-dev
 ```
 
 CSS Module 和 antd 同时使用会出现一些样式问题。
+
+### pm2 部署
+
+```bash
+
+pm2 start npm --name "next-web" -- run build
+```
